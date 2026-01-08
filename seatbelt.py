@@ -15,4 +15,4 @@ coco_yaml = "./Seat_belt_detection-2/data.yaml"
 results = model.train(data=coco_yaml, epochs=5, imgsz=640, device=device)
 
 # save the model
-model.export(weights="yolo11n-seatbelt.pt")
+model.save("seatbelt_model.pt")
