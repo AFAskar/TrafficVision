@@ -9,3 +9,5 @@ wheels/
 # Virtual environments
 .venv
 Seat_belt_detection-2/
+runs/
+*.pt
