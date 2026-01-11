@@ -51,7 +51,7 @@ uvx --from git+https://github.com/AFAskar/trafficvision trafficvision-web
 ### Install from GitHub
 
 ```sh
-pip install git+https://github.com/AFAskar/trafficvision
+uv tool install git+https://github.com/AFAskar/trafficvision
 ```
 
 ### Local Development
@@ -59,7 +59,7 @@ pip install git+https://github.com/AFAskar/trafficvision
 ```sh
 git clone https://github.com/AFAskar/trafficvision.git
 cd trafficvision
-pip install -e .
+uv pip install -e .
 ```
 
 ## Usage
