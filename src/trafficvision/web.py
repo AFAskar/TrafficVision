@@ -1,13 +1,13 @@
 import gradio as gr
 import numpy as np
 import cv2
-from saher.pipeline import run_pipeline, get_violation_type
+from trafficvision.pipeline import run_pipeline, get_violation_type
 from PIL import Image
 
 
 def process_image(image):
     """
-    Process an image through the SAHER pipeline.
+    Process an image through the TRAFFICVISION pipeline.
 
     Args:
         image: Input image (numpy array from Gradio)
@@ -63,10 +63,10 @@ def process_image(image):
 
 def gradio_interface():
     """
-    Create and launch the Gradio interface for SAHER pipeline.
+    Create and launch the Gradio interface for TRAFFICVISION pipeline.
     """
-    with gr.Blocks(title="SAHER - Traffic Violation Detection") as demo:
-        gr.Markdown("# SAHER Traffic Violation Detection System")
+    with gr.Blocks(title="TRAFFICVISION - Traffic Violation Detection") as demo:
+        gr.Markdown("# TRAFFICVISION Traffic Violation Detection System")
         gr.Markdown(
             "Upload an image to detect traffic violations, license plates, and read plate numbers."
         )

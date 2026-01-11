@@ -1,6 +1,6 @@
 from pathlib import Path
 import typer
-from saher.pipeline import run_pipeline, get_violation_type
+from trafficvision.pipeline import run_pipeline, get_violation_type
 from PIL import Image
 
 app = typer.Typer()
@@ -28,7 +28,7 @@ def main(
         False, "-s", "--save", help="Whether to save all output images"
     ),
 ):
-    from saher.pipeline import run_pipeline
+    from trafficvision.pipeline import run_pipeline
 
     violations, plates, ocr_texts = run_pipeline([images_path])
     if save_all:
